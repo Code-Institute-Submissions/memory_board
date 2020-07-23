@@ -3,6 +3,7 @@
 
 html {
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,9 +19,54 @@ body {
 .title {
   color: rgb(255, 255, 255);
   font-family: 'Holtwood One SC', serif;
+  margin: 0;
+  padding: 0;
   text-align: center;
   font-size: 6em;
 }
+
+.button {
+    display: inline-block;
+    justify-content: center;
+}
+    
+
+.btn.easy {
+  border: none;
+  background-color: inherit;
+  padding: 4px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  
+ 
+}
+
+.btn.hard {
+  border: none;
+  background-color: inherit;
+  padding: 4px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  
+}
+
+
+  .btn {
+  border: none;
+  background-color: inherit;
+  padding: 4px 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.btn:hover {background: yellow;}
+
+.how-to-play {color:white;}
+.easy {color: white;}
+.hard {color: white;}
+
+
+/*.........................Game info....................*/
 
 .game-info-container {
   grid-column: 1 / -1;
@@ -41,11 +87,13 @@ body {
   perspective: 500px;
 }
 
+/*.........................Card Info........................*/
+
 .card {
   position: relative;
   background-color: rgb(255, 255, 255);
-  height: 200px;
-  width: 200px;
+  height: 175px;
+  width: 175px;
   
 }
 
@@ -73,14 +121,18 @@ body {
 
 .football {
    position: absolute;
-   width: 175px;
-   height: 175px;
+   width: 150px;
+   height: 150px;
 }
 
 
 .card-value {
   position: absolute;
+  widows: 150px;
+  height: 150px;
 }
+
+/*............................Overlay..........................*/
 
 .overlay-text {
     display: none;
@@ -102,24 +154,13 @@ body {
 .overlay-text.visible {
   display: flex;
   flex-direction: column;
-  animation: overlay-grow 500ms forwards;
-}
-
-@keyframes overlay-grow {
-  from {
-    background-color: rgba(0, 0, 0, 0);
-    font-size: 0;
-  }
-  to {
-    background-color: rgba(0, 0, 0, .8);
-    font-size: 10em;
-  }
-
+  font-family: 'Holtwood One SC', serif; 
+  font-size: 6em;
 }
 
 @media (max-width: 600px) {
   .game-container {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(4, auto);
   }
 
 .game-info-container {
