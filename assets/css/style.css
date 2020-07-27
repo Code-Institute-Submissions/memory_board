@@ -25,6 +25,15 @@ body {
   font-size: 6em;
 }
 
+.btn.btn-primary {
+  border: none;
+  background-color: brown;
+  padding: 4px 20px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 850px;  
+}
+
 .button {
     display: inline-block;
     justify-content: center;
@@ -37,9 +46,15 @@ body {
   padding: 4px 20px;
   font-size: 30px;
   cursor: pointer;
-  
- 
 }
+
+.btn.medium {
+  border: none;
+  background-color: inherit;
+  padding: 4px 20px;
+  font-size: 30px;
+  cursor: pointer;
+ }
 
 .btn.hard {
   border: none;
@@ -47,11 +62,9 @@ body {
   padding: 4px 20px;
   font-size: 30px;
   cursor: pointer;
-  
-}
+  }
 
-
-  .btn {
+.btn {
   border: none;
   background-color: inherit;
   padding: 4px 20px;
@@ -59,11 +72,17 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {background: yellow;}
+.easy {
+    color: white;
+}
 
-.how-to-play {color:white;}
-.easy {color: white;}
-.hard {color: white;}
+.medium {
+    color: white;
+}
+
+.hard {
+    color: white;
+    }
 
 
 /*.........................Game info....................*/
@@ -80,7 +99,7 @@ body {
 }
 .game-container {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(8, auto);
   grid-gap: 10px;
   margin: 50px;
   justify-content: center;
@@ -92,8 +111,8 @@ body {
 .card {
   position: relative;
   background-color: rgb(255, 255, 255);
-  height: 175px;
-  width: 175px;
+  height: 150px;
+  width: 150px;
   
 }
 
@@ -144,7 +163,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 100;
-    color: orangered;
+    color: brown;
 }
 
 .overlay-text-small {
@@ -155,7 +174,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Holtwood One SC', serif; 
-  font-size: 6em;
+  font-size: 5em;
 }
 
 @media (max-width: 600px) {
