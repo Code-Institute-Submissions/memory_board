@@ -6,37 +6,37 @@ class FootballMemoryGame {
     this.timer = document.getElementById("time-remaining");
     this.ticker = document.getElementById("flips");
   }
-
  
-  
   startGame() {
     this.totalClicks = 0;
     this.timeRemaining = this.totalTime;
     this.cardToCheck = null;
     this.matchedCards = [];
     this.busy = true;
-    setTimeout(() => {
+    
+  setTimeout(() => {
       this.shuffleCards(this.cardsArray);
-      this.countdown = this.startCountdown();
+      this.countDown = this.startCountDown();
       this.busy = false;
     }, 1000);
     this.hideCards();
     this.timer.innerText = this.timeRemaining;
     this.ticker.innerText = this.totalClicks;
   }
-  startCountdown() {
+  startCountDown() {
     return setInterval(() => {
       this.timeRemaining--;
       this.timer.innerText = this.timeRemaining;
       if (this.timeRemaining === 0) this.gameOver();
     }, 1000);
   }
+
   gameOver() {
-    clearInterval(this.countdown);
+    clearInterval(this.countDown);
     document.getElementById("game-over-text").classList.add("visible");
   }
   youWin() {
-    clearInterval(this.countdown);
+    clearInterval(this.countDown);
     document.getElementById("you-win-text").classList.add("visible");
   }
   hideCards() {
@@ -110,6 +110,8 @@ function ready() {
   let overlays = Array.from(document.getElementsByClassName("overlay-text"));
   let cards = Array.from(document.getElementsByClassName("card"));
   let game = new FootballMemoryGame(90, cards);
+  let container = document.getElementsByClassName('game-container')[0]
+  container.scrollIntoView()
 
   overlays.forEach((overlay) => {
     overlay.addEventListener("click", () => {
@@ -124,5 +126,3 @@ function ready() {
     });
   });
 }
-
- 

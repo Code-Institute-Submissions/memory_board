@@ -23,32 +23,54 @@
 
     <h1 class="title">Football Memory Game</h1>
     <div class="container">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-  How To Play
-</button>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#staticBackdrop"
+      >
+        How To Play
+      </button>
     </div>
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Game Instructions</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Game Instructions
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            The aim of the game is to find pairs of cards in the fewest amount
+            of flips and within the 90 second time limit. To start just click on
+            "Click to Start", this will start the clock. Then simply click on a
+            card then click another card to try to find its pair. If the pair is
+            not found then the cards will flip back, just try to remember where
+            they were, if the cards do match they will remain face up. The
+            easiest level has 12 matching pairs to find before the time is up,
+            the medium level has 16 pairs and the hard level has 20. Each level
+            needs to be completed in 90 seconds. Good Luck and Enjoy.
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        The aim of the game is to find pairs of cards in the fewest amount
-            of flips and within the 90 second time limit. Simply click on a card
-            then click another card to try to find its pair. If the pair is not
-            found then the cards will flip back, if you do they will remain face
-            up. The easiest level has 12 matching pairs to find before the time
-            is up, the medium level has 16 pairs and the hard level has 20. all
-            levels need to be completed in 90 seconds. Good Luck and Enjoy.
-      </div>
-     
     </div>
-  </div>
-</div>
 
     <div class="overlay-text visible">Click to Start</div>
     <div id="game-over-text" class="overlay-text">
@@ -63,14 +85,15 @@
       <div class="game-info-container">
         <div class="game-info">Time <span id="time-remaining">90</span></div>
         <a class="btn-easy" href="index.html">Easy</a>
-        <a class="btn-medium" href="medium.html" style="color:orange;font-size:40px">MEDIUM</a>
+        <a
+          class="btn-medium"
+          href="medium.html"
+          style="color: orange; font-size: 40px;"
+          >MEDIUM</a
+        >
         <a class="btn-hard" href="hard.html">Hard</a>
         <div class="game-info">Flips <span id="flips">0</span></div>
-        
-
       </div>
-
-      
 
       <!------------Card Face Images---------------------->
 
@@ -331,8 +354,25 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <footer>
+        <p>Designed By<br> 
+        Paul Cragg<br>
+        &copy;Copyrights Reserved 2020</p>
+        </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

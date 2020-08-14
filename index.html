@@ -22,10 +22,15 @@
     <!-----------Game Text Info-------------->
 
     <h1 class="title">Football Memory Game</h1>
-     <div class="container">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-  How To Play
-</button>
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#staticBackdrop"
+      >
+        How To Play
+      </button>
     </div>
     <div
       class="modal fade"
@@ -54,14 +59,15 @@
           </div>
           <div class="modal-body">
             The aim of the game is to find pairs of cards in the fewest amount
-            of flips and within the 90 second time limit. Simply click on a card
-            then click another card to try to find its pair. If the pair is not
-            found then the cards will flip back, if you do they will remain face
-            up. The easiest level has 12 matching pairs to find before the time
-            is up, the medium level has 16 pairs and the hard level has 20. all
-            levels need to be completed in 90 seconds. Good Luck and Enjoy.
+            of flips and within the 90 second time limit. To start just click on
+            "Click to Start", this will start the clock. Then simply click on a
+            card then click another card to try to find its pair. If the pair is
+            not found then the cards will flip back, just try to remember where
+            they were, if the cards do match they will remain face up. The
+            easiest level has 12 matching pairs to find before the time is up,
+            the medium level has 16 pairs and the hard level has 20. Each level
+            needs to be completed in 90 seconds. Good Luck and Enjoy.
           </div>
-          
         </div>
       </div>
     </div>
@@ -72,13 +78,18 @@
       <span class="overlay-text-small">Click to Restart</span>
     </div>
     <div id="you-win-text" class="overlay-text">
-      YOU WIN
+     YOU WIN
       <span class="overlay-text-small">Click to Play Again</span>
     </div>
     <div class="game-container">
       <div class="game-info-container">
         <div class="game-info">Time <span id="time-remaining">90</span></div>
-        <a class="btn-easy" href="index.html" style="color:orange;font-size:40px">EASY</a>
+        <a
+          class="btn-easy"
+          href="index.html"
+          style="color: orange; font-size: 40px;"
+          >EASY</a
+        >
         <a class="btn-medium" href="medium.html">Medium</a>
         <a class="btn-hard" href="hard.html">Hard</a>
         <div class="game-info">Flips <span id="flips">0</span></div>
@@ -279,6 +290,11 @@
         </div>
       </div>
     </div>
+    <footer>
+        <p>Designed By<br> 
+        Paul Cragg<br>
+        &copy;Copyrights Reserved 2020</p>
+        </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -294,5 +310,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+        
   </body>
 </html>
