@@ -6,15 +6,15 @@ class FootballMemoryGame {
     this.timer = document.getElementById("time-remaining");
     this.ticker = document.getElementById("flips");
   }
- 
+
   startGame() {
     this.totalClicks = 0;
     this.timeRemaining = this.totalTime;
     this.cardToCheck = null;
     this.matchedCards = [];
     this.busy = true;
-    
-  setTimeout(() => {
+
+    setTimeout(() => {
       this.shuffleCards(this.cardsArray);
       this.countDown = this.startCountDown();
       this.busy = false;
@@ -34,17 +34,22 @@ class FootballMemoryGame {
   gameOver() {
     clearInterval(this.countDown);
     document.getElementById("game-over-text").classList.add("visible");
+    this.hideCards();
   }
+
   youWin() {
     clearInterval(this.countDown);
     document.getElementById("you-win-text").classList.add("visible");
+    
   }
+
   hideCards() {
     this.cardsArray.forEach((card) => {
       card.classList.remove("visible");
       card.classList.remove("matched");
     });
   }
+
   flipCard(card) {
     if (this.canFlipCard(card)) {
       this.totalClicks++;
@@ -58,6 +63,7 @@ class FootballMemoryGame {
       }
     }
   }
+
   checkForCardMatch(card) {
     if (this.getCardType(card) === this.getCardType(this.cardToCheck))
       this.cardMatch(card, this.cardToCheck);
@@ -65,6 +71,7 @@ class FootballMemoryGame {
 
     this.cardToCheck = null;
   }
+
   cardMatch(card1, card2) {
     this.matchedCards.push(card1);
     this.matchedCards.push(card2);
@@ -72,6 +79,7 @@ class FootballMemoryGame {
     card2.classList.add("matched");
     if (this.matchedCards.length === this.cardsArray.length) this.youWin();
   }
+
   cardMismatch(card1, card2) {
     this.busy = true;
     setTimeout(() => {
@@ -80,6 +88,7 @@ class FootballMemoryGame {
       this.busy = false;
     }, 1000);
   }
+
   shuffleCards(cardsArray) {
     // Fisher-Yates Shuffle Algorithm.
     for (let i = cardsArray.length - 1; i > 0; i--) {
@@ -110,8 +119,8 @@ function ready() {
   let overlays = Array.from(document.getElementsByClassName("overlay-text"));
   let cards = Array.from(document.getElementsByClassName("card"));
   let game = new FootballMemoryGame(90, cards);
-  let container = document.getElementsByClassName('game-container')[0]
-  container.scrollIntoView()
+  let container = document.getElementsByClassName("game-container")[0];
+  container.scrollIntoView();
 
   overlays.forEach((overlay) => {
     overlay.addEventListener("click", () => {

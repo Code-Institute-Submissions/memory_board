@@ -142,16 +142,14 @@ body {
 /*............................Overlay..........................*/
 
 .overlay-text.visible {
-    width: 500px;
-    height: 150px;
-    background: brown;
-    position: absolute;
+    width: 800px;
+    height: 250px;
+    background: brown;   
     display: flex;
     flex-direction: column;
     font-family: 'Holtwood One SC', serif; 
-    font-size: 3em;
+    font-size: 5em;
     border: none;
-    
     color: white;
     z-index: 1;
 }
@@ -162,7 +160,7 @@ body {
     position: absolute;
     top: 50%;
     left: 25%;
-    transform: translate(45%, 25%);
+    transform: translate(10%, 10%);
     cursor: pointer;
     justify-content: center;
     align-items: center;
@@ -181,9 +179,10 @@ footer  {
     margin-left: 50px;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 600px) {
   .game-container {
     grid-template-columns: repeat(4, auto);
+    justify-content: left;
 }
 
 
