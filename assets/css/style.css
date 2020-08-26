@@ -142,12 +142,13 @@ body {
 /*............................Overlay..........................*/
 
 .overlay-text.visible {
-    width: 800px;
-    height: 250px;
+    
     background: brown;   
     display: flex;
-    flex-direction: column;
+    flex-direction: initial;
+    justify-content: center;
     font-family: 'Holtwood One SC', serif; 
+    text-align: center;
     font-size: 5em;
     border: none;
     color: white;
@@ -160,11 +161,12 @@ body {
     position: absolute;
     top: 50%;
     left: 25%;
+    right: 33%;
     transform: translate(10%, 10%);
     cursor: pointer;
-    justify-content: center;
     align-items: center;
 }
+
 
 .overlay-text-small {
     font-size: .5em;
@@ -179,14 +181,35 @@ footer  {
     margin-left: 50px;
 }
 
+@media only screen and (max-width: 1024px) {
+   .game-container{
+    grid-template-columns: repeat(6, auto);
+}
+}
+
 @media only screen and (max-width: 600px) {
-  .game-container {
+   .game-container{
     grid-template-columns: repeat(4, auto);
-    justify-content: left;
+}
 }
 
-
-
-
-
+@media only screen and (max-width: 768px) {
+   .game-container{
+    grid-template-columns: repeat(4, auto);
 }
+}
+
+@media only screen and (max-width: 375px) {
+   .game-container{
+    justify-content: center;
+    grid-template-columns: repeat(4, auto);
+}
+    .overlay-text.visible{
+    width: 400px;
+    height: 400px;
+    top: 100%;
+    left: 25%;
+    right: 33%;
+}
+}
+
