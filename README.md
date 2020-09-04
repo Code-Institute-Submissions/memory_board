@@ -110,6 +110,11 @@ After final git push I went onto my GitHub page at https://github.com/Craggy19/m
 
 Once there I went to settings and scrolled down to GitHub Pages, from there I changed the dropdown menu from None to Master Branch and hit enter. 
 
+Local deployment.
+
+Within the Memory_Board repository I clicked on green code button. This gave me an option of 
+https or ssh. I chose https and clicked on the download zip option. This then downloaded to my laptop which I have unzipped and am able to play locally. 
+
 ## **Credits** ##
 
 My initial inspiration was from a you tube video from PortEXE. I took much of this code and adapted it to my own style.
@@ -124,6 +129,6 @@ The background was taken from Wallpaperswide.com via google images.
 
 ### **Acknowledgements** ###
 
-I had three discussions with my mentor and was advised that a Pairs Memory Game is probably the best route forward at this stage. 
+I had three discussions with my mentor and was advised at the beginning that a Pairs Memory Game is probably the best route forward at this stage. 
 I combined the game with my personal interest in Football. I discussed with friends and colleagues and 
 the team badges was the outcome of these discussions. 
