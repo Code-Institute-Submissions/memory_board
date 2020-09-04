@@ -1,6 +1,6 @@
 # **Football Memory Game**
 
-![Game Caption](assets/images/gamecaption.PNG)
+![Game Caption](/assets/images/gamecaption.PNG)
 
 
 ## **The Aim of This Game.** ##
@@ -100,4 +100,12 @@ I felt that this was a good thing as I was very pleased when I managed to comple
 
 5. The "How to Play" button worked on all pages without an issue. 
 
+
+## **Deployment** ##
+
+Step by step guide for deployment is :- 
+
+After final git push I went onto my GitHub page at https://github.com/Craggy19/memory_board. 
+
+Once there I went to settings and scrolled down to GitHub Pages, from there I changed the dropdown menu from None to Master Branch and hit enter. 
 
