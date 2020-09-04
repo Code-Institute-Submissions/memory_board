@@ -95,10 +95,11 @@ I only found this out by accident when playing the game on the Hard Level. To so
 As soon as the "Game Over" text appeared the cards all flipped back to face down and the flips count returned to zero. 
 
 4. Other than the above comments I made sure that the link between each level worked effectively and the each level was achievable.
-Admittedly the Hard Level probably had more Game Over messages than You Win but after time I was able to complete it with some regularity.
+Admittedly the Hard Level probably had more "Game Over" messages than "You Win" but after time I was able to complete it with some regularity.
 I felt that this was a good thing as I was very pleased when I managed to complete it and made me want to try again. 
 
 5. The "How to Play" button worked on all pages without an issue. 
+6. I have run all CSS and HTML files through a validator and all appear error free
 
 
 ## **Deployment** ##
@@ -109,3 +110,20 @@ After final git push I went onto my GitHub page at https://github.com/Craggy19/m
 
 Once there I went to settings and scrolled down to GitHub Pages, from there I changed the dropdown menu from None to Master Branch and hit enter. 
 
+## **Credits** ##
+
+My initial inspiration was from a you tube video from PortEXE. I took much of this code and adapted it to my own style.
+https://www.youtube.com/watch?v=3uuQ3g92oPQ
+
+While I still used this shuffle technique I needed to understand how it worked and I found this information at 
+https://www.w3schools.com/js/js_array_sort.asp
+
+The images for the back and face of the cards were taken from various sites in google images. 
+
+The background was taken from Wallpaperswide.com via google images. 
+
+### **Acknowledgements** ###
+
+I had three discussions with my mentor and was advised that a Pairs Memory Game is probably the best route forward at this stage. 
+I combined the game with my personal interest in Football. I discussed with friends and colleagues and 
+the team badges was the outcome of these discussions. 
